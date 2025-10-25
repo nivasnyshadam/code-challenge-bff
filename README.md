@@ -36,8 +36,8 @@ src/
    npm run test
 
 ### Output Summary:
-For inputItems2: The total was 249.00
-For inputItems3: The total was 2718.95
+1. For inputItems2: The total was 249.00
+2. For inputItems3: The total was 2718.95
 
 ### Test Summary:
 All totals matched expected outputs successfully.
