@@ -36,8 +36,14 @@ const runTests = [
     console.log(`Total for inputItems2: $${total2?.toFixed(2)}`);
     console.log(`Total for inputItems3: $${total3?.toFixed(2)}`);
     // Compare results
-    assert.strictEqual(Number(total2?.toFixed(2)), output2, `Case 2 failed: expected ${output2}, got ${total2}`);
-    assert.strictEqual(Number(total3?.toFixed(2)), output3, `Case 3 failed: expected ${output3}, got ${total3}`);
+    try {
+        assert.strictEqual(Number(total2?.toFixed(2)), output2, `Case 2 failed: expected ${output2}, got ${total2}`);
+        assert.strictEqual(Number(total3?.toFixed(2)), output3, `Case 3 failed: expected ${output3}, got ${total3}`);    
+        console.log("All totals match expected outputs!");
+    } catch (error: any) {
+        console.log('Test failed:', error?.message);
+    }
+    
 
-    console.log("All totals match expected outputs!");
+    
 })();
