@@ -1,0 +1,12 @@
+{
+  "name": "checkout",
+  "version": "1.0.0",
+  "description": "A simple checkout system with discount rules implemented in TypeScript.",
+  "scripts": {
+    "clean": "tsc --build --clean || rm -rf dist",
+    "build": "tsc -p tsconfig.json",
+    "postbuild": "node dist/app.js",
+    "dev": "tsc -w -p tsconfig.json && nodemon --watch 'dist/**/*.js' --exec 'node dist/app.js'",
+    "test": "tsc -p tsconfig.json && node dist/tests/app.spec.js"
+  }
+}
