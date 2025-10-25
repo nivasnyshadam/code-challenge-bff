@@ -35,20 +35,20 @@ src/
 4. Run tests:
    npm run test
 
-# Output Summary:
+### Output Summary:
 For inputItems2: The total was 249.00
 For inputItems3: The total was 2718.95
 
-# Test Summary:
+### Test Summary:
 All totals matched expected outputs successfully.
 
-# Project Flow:
+### Project Flow:
 1. Items are scanned using the Checkout class.
 2. The pricing rules are applied from the discounts configuration.
 3. Fixed and bulk discounts are processed.
 4. The final total is computed and displayed.
 
-# Example Run:
+### Example Run:
 Scanned item: Apple TV, Price: 109.5
 Scanned item: Super iPad, Price: 549.99
 Calculating total price for scanned items...
